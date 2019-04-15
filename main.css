@@ -1,0 +1,68 @@
+body {
+    overflow: hidden;
+    padding-top: 30px;
+}
+#board {
+    width: 300px;
+    height: 600px;
+    outline: 10px solid lightgrey;
+    display: block;
+    margin : 0 auto;
+}
+#newRect {
+    position: absolute;
+    z-index: -100;
+}
+#newRect.blue {
+    background-color: lightblue;
+}
+#newRect.red {
+    background-color: pink;
+}
+div.cell {
+    outline: 1px solid lightgrey;
+    float: left;
+}
+.cell.blue {
+    background-color: blue;
+    z-index: -1;
+}
+.cell.red {
+    background-color: red;
+    z-index: -1;
+}
+button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+button:active:hover {
+    font-size: 10px;
+}
+#pl1 {
+    background-color: red;
+}
+#pl2 {
+    background-color: blue;
+}
+p {
+    text-align: center;
+}
+#showSize {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    width: 120px;
+    display: inline-block;
+    border: none;
+    padding: 10px 0px;
+    margin: 20px;
+    margin-top: 9px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Another brick in the wall</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body onload='board = new Board();'>
+    <div id=container>
+        <div id='board'
+            onmousemove="board.showCoords(event);"
+            onclick="board.switchDrawMode(event);"
+            onkeydown="board.keydown(event)">
+            <div id=newRect></div>
+        </div>
+
+    </div>
+    <p>
+        <button id="pl1" onclick="board.turnRed()">Player One</button>
+        <span id='showSize'></span>
+        <button id="pl2" onclick="board.turnBlue()">Player Two</button>
+    </p>
+
+</body>
+
